@@ -1,13 +1,15 @@
-function findWord(word){
-    let arr=word.match(/\w[a-z]*/gi);
-    let res = arr[0];
-
-    for(let i=0; i< arr.length; i++){
-        if(res.length<arr[i].length){
-            res = arr[i];
-        }
+for(let i=0; i<= 100; i++){
+    if(i%2 ===0){
+        console.log(i + ':fizzbuzz');
     }
-    return res;
+    else if(i%2===0){
+        console.log(i + ':fizz');
+    }
+    else if(i%5 === 0){
+        console.log(i+ ':buzz');
+    }
+    else
+    console.log(i);
 }
- console.log(findWord('The modern English alphabet is a Latin alphabet consisting of 26 letters, '));
-
+    
+ 
